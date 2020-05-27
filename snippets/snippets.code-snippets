@@ -1,0 +1,62 @@
+{
+  "import": {
+    "prefix": "imp",
+    "body": "import ${2:module} from '${1:module}';$0",
+    "description": "Import module statement in ES6 syntax"
+  },
+  "require": {
+    "prefix": "rqr",
+    "body": "require('${1:module}');$0",
+    "description": "Import module with require"
+  },
+  "requireToConst": {
+    "prefix": "req",
+    "body": "const ${2:module} = require('${1:module}');$0",
+    "description": "Import module to a const with require"
+  },
+  "moduleExport": {
+    "prefix": "mde",
+    "body": "module.exports = ${1:exportName};$0",
+    "description": "Use module exports"
+  },
+  "exportDefault": {
+    "prefix": "epd",
+    "body": "export default ${1:exportName}$0;",
+    "description": "Use export default"
+  },
+  "classModuleExports": {
+    "prefix": "clsr",
+    "body": "class ${1:className} {\n\t$0\n}\n\nmodule.exports = ${1:className};\n",
+    "description": "Create one class with module.exports"
+  },
+  "classExportDefault": {
+    "prefix": "clsi",
+    "body": "class ${1:className} {\n\t$0\n}\n\nexport default ${1:className};\n",
+    "description": "Create one class with export default"
+  },
+  "anonymousFunction": {
+    "prefix": "fn",
+    "body": "const ${1:name} = function () {\n\t$0\n};\n",
+    "description": "Create an anonymous function"
+  },
+  "namedFunction": {
+    "prefix": "fnn",
+    "body": "function ${1:name} () {\n\t$0\n};\n",
+    "description": "Create a named function"
+  },
+  "arrowFunction": {
+    "prefix": "arf",
+    "body": "const ${1:name} = () => {\n\t$0\n};",
+    "description": "Crate an arrow function"
+  },
+  "asyncArrowFunction": {
+    "prefix": "aarf",
+    "body": "const ${1:name} = async () => {\n\t$0\n};\n",
+    "description": "Crate an async arrow function"
+  },
+  "newPromise": {
+    "prefix": "npr",
+    "body": "return new Promise((resolve, reject) => {\n\t$0\n});\n",
+    "description": "Create a new Promise"
+  }
+}
