@@ -4,7 +4,6 @@ This snippets include the ES6 syntax.
 
 ### First additions
 
-<p align="center">
 | **Prefix** | **Snippets**                                |
 |------------|---------------------------------------------|
 | imp        | ```import module from 'module';```          |
@@ -19,7 +18,6 @@ This snippets include the ES6 syntax.
 | arf        | Crate an arrow function                     |
 | aarf       | Crate an async arrow function               |
 | npr        | Create a new Promise                        |
-</p>
 
 ### Contribute
 
